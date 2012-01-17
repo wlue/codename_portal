@@ -1,0 +1,51 @@
+
+! Scenario 1, Level 9 -- Bocaj 
+! By: Jacob Gillson
+
+==info==
+width=29
+height=30
+==info==
+
+==key==
+a=tile(wall)
+d=tile(dwall)
+g=tile(glass)
+t=turret()
+q=terrain(bigbox)
+x=door(door|exit=0)
+X=door(door|exit=1)
+==key==
+
+==map==
+a a a a a a a a a a a a a a a a a a a a a a a a a a a a a 
+a a a a a a a a a a a a a a a a a . . . . . . a a a a a a 
+a a a a a a a a a a a a a a a a a . . . . . . a a a a a a 
+a a a a a a a a a a a a a a a a . . . . . . . a d d d d d 
+a a . . . g . . . . . a . . . . . . . . . . . . . . . . d
+a a . . . g . . . t . a . . . . . . . . . . . . . . . . d
+a a . . . g . . . . . a . . . . . d . t . d . . . . . . d
+a a a g a a a . . a a a g g g d d d . . . d a a a a . . d
+a . . . . . a . . g g g g g d d . d d d d d . . . g . . d
+a . . . . . a . . g g g g d d . . . . . . . . . . g . . a
+a . . . . . a . . g g g d d . . . . . . . . . . . g . . a
+a . x . . . a . . g g d . . . . . . . . . . . . . g . . a
+a g g g g a a . . g d d . . . d . . d d a a a a g d d d d 
+a a g a a a a . . d d . . . a d . . . d a a a a g a a a a 
+a . . . a . a a a a d . . . a d . . . d a a a a g a a a a 
+a . . . a . . g g g g . . . a d . t . d a a a a g a a a d 
+a . X . a . . g g g g . . . a d . . . d . . . . . . . . d 
+d g g g d d d d d a a a g a a d d d d d . . . . . . . . d
+d . . d d . . . . a a a g a a d d d d d . . a a a a a . d 
+d . . . . . . . . a a a g a d d d d d d . . . . . . . . a 
+d . . . . . . . . a . . . . . . . . . . . . . . . . . . a 
+d d d d d d . . . . . . . . . . . . . . . . . . . . . . a 
+a a a a a a . . . . . . . . . . . . . . . . . . . . . . d 
+a . . . . . . . . . . . . . . . . . . . . . . . . . . . d 
+a . . . . . . . . . . . . . . . . . . . . . . . . . . . d 
+a . . . a a . . . a d a a a d d d d d d . . . . . . . . d 
+a . . . a a . . . a a a a a a d d d d d . . . . . . . . d 
+a . . . a a . . . a a a a a a d d d d d . . . . . . t . d 
+a . . . a a . . . a a a a a a d d d d d . . . . . . . . d 
+a a a a a a a a a d a a a a a d d d d d a a a a a a a a d  
+==map==

@@ -1,0 +1,39 @@
+
+! Scenario 1, Level 5 -- Obstruction
+
+==info==
+width=25
+height=20
+==info==
+
+==key==
+a=tile(wall)
+b=tile(dwall)
+g=tile(glass)
+v=tile(spike)
+x=door(door|exit=0)
+X=door(door|exit=1)
+==key==
+
+==map==
+a a a a b b b a a a b b b a a a b b b a a a b b b 
+a a a a b . . . . . . b . . . . . b . . . . . . b 
+a b b b b . . . . . . b . . . . . b . . . . . . b 
+a b . . . . . . . . . b . . . . . b . . . . . . a
+a b . . . . . . b . . . . . b . . . . . b . . . a
+a b . . . . . . b . . . . . b . . . . . b . . . a
+a b . . . . . . b . . . . . b . . . . . b . x . a
+a b . . . g g a a a a a a a a a a a a a a a a a a
+a b . . . g g a a a a a a a b b a a a b b a a a a
+a b . . . g g b b b b b b b b . . . . . b b b b b
+a a . . . . . . . . . . . . . . . . . . . . . . b
+a a . . . . . . . . . . . . . . . . . . . . . . b
+a a . . . . . . . . . . . . . . . . . . . . . . b
+a b . . . b b b b . . . . . . . . . . . . . X . b
+a b . . . b b b b . . . . . . . b b b b b b b b b 
+a b . . . b b b b . . . . . . . a a a a a a a a a 
+a b . . . b b b b . . . . . . . a a a a a a a a a 
+a b . . . b b b b v v v . . . . a a a a a a a a a 
+a b a a a b b b b b b b b b b b b a a a a a a a a 
+a a a a a a a a a a a a a a a a a a a a a a a a a 
+==map==

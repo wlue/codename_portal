@@ -1,0 +1,37 @@
+
+! Scenario 1, Level 7 -- Blocks
+
+==info==
+width=30
+height=18
+==info==
+
+==key==
+a=tile(wall)
+b=tile(dwall)
+g=tile(glass)
+q=terrain(bigbox)
+x=door(door|exit=0)
+X=door(door|exit=1)
+==key==
+
+==map==
+a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a 
+a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a 
+a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a 
+a b b b b b b b b b a a a a a a a a . . . . . . . . . . a a 
+a . . . . . . . . b b a a a a a a a . . . . . . . . . . a a 
+a . . . . . . . . . b a a a a a a a . . . . . . . . . . a a 
+a . . . . . . . . . b a a a a a a a g g g b b b b g g g a a
+a . x . . . . . . . g . . . a a a a . . . b a a b . . . a a 
+a a a a a a a b g g g . . . a a a a . . . a a a b . . . a a 
+a a a a a a a b . . . . . . g g g g . . . a a a b . . . a a 
+a . . . . . . g . . . . . . a a a a . . . a a a b . . . a a 
+a . . . . . . g . . . . . . a a a a b b b b b b b . . . a a 
+a . q . . . . g . . . . . . a a a a . . . . . . . . . . a a 
+a . . . . . . g . . . . . . a a a a . . . . . . . . . . a a 
+a . q . . q . g . . q . q . a a a a . X . . . . . . . . a a 
+a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a 
+a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a 
+a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a 
+==map==

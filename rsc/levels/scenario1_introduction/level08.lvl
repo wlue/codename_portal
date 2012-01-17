@@ -1,0 +1,40 @@
+
+! Scenario 1, Level 8 -- Turrets
+
+==info==
+width=25
+height=20
+==info==
+
+==key==
+a=tile(wall)
+d=tile(dwall)
+g=tile(glass)
+t=turret()
+q=terrain(bigbox)
+x=door(door|exit=0)
+X=door(door|exit=1)
+==key==
+
+==map==
+a a a a a a a a a a a a a a a a a a a a a a a a a
+a a a a . . . . . . d . . . . . . . . . a . . . a
+a a a a . . . . . . d . . . . . . . . . a . . . a
+a a a a . . . . . . d . . . . . . . . . a . . . a
+a a a a . . . . . . d . . . . . . . . . a . . . a
+a a a a . . . . . . d . . . . . . . . . a . X . a
+a a a a g g d d g g d g g g g a g g g g a a g a a
+a . . . . . d d . . . . . . . a . . . . a a g a a
+a . . . . . a a . . . . . . . a . . . . a a g a a
+a . . . . . a a . . . . . . . a . . . . a a g a a
+a . . . . . a a . . . . . . . a . . . . a a g a a
+a . x . . . d d . . . . t . . a . . . . a a g a a
+a a a a a d d d d a a a a a a a g g g g a a g a a
+a a a a a a a a a a a a a a a a . . . . a a g a a
+a a a a a a a a a a a a a a a a . . . . a a g a a
+a a a a a a a a a a a a a a a a . . . . . a g a a 
+a a a a a a a a a a a a a a a a . . . . . . . . a
+a a a a a a a a a a a a a a a a . . . . . . . . a
+a a a a a a a a a a a a a a a a . . t . . . . . a
+a a a a a a a a a a a a a a a d d a a a d d d d d 
+==map==

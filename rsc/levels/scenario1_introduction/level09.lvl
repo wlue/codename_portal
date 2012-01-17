@@ -1,0 +1,39 @@
+
+! Scenario 1, Level 9 -- Shattered Glass
+
+==info==
+width=28
+height=18
+==info==
+
+==key==
+a=tile(wall)
+b=tile(bwall)
+v=tile(spike)
+s=terrain(spikeball)
+g=tile(glass)
+h=tile(bglass)
+x=door(door|exit=0)
+X=door(door|exit=1)
+==key==
+
+==map==
+a a a a a a a a a a a a a a a a a a a a a a a a a a a a 
+a . . . . . . . . . . a a . . . . . . . . . . . . . . a 
+a . . . . . . . . . . a a . . . . . . . . . . . . . . a 
+a . . . . . . . . . . a a . . . . . . . . . . . . . . a 
+a . s . x . . . . . . a a . . . . . . . . . . . . . . a 
+a a a a a a a h h h a a a a g g g a a a a a a b b b a a 
+a a a a a a a h h h a a a a . . . a a a a a a h h h a a 
+a a a a a a a h h h a a a a . . . a a a a a a h h h a a 
+a a a a a a a h h h a a a a . . . a a a a a a h h h a a 
+a a a a a a a h h h a a a a . . . a a a a a a g g g a a 
+a a a a a a a h h h a a a a g g g a a a a a a . . . a a 
+a a a a a a a h h h a a a . . . . . a a a a a . . . a a 
+a a a a a a a h h h h h h . . . . . a a a a a . . . a a 
+a a a a a a a h h h h h h . . . . . a a a a a g g g a a 
+a a a a a a a a a a a a a a a a a a a a . . . . . . a a 
+a a a a a a a a a a a a a a a a a a a a . . . . . . a a 
+a a a a a a a a a a a a a a a a a a a a . X . . . . a a 
+a a a a a a a a a a a a a a a a a a a a a a a a a a a a 
+==map==

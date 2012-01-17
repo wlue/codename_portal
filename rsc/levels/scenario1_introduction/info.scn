@@ -1,0 +1,73 @@
+
+! CODENAME: Portal Scenario File
+! Scenario 1 -- Introduction
+
+==info==
+name=Introduction
+difficulty=Easy
+==info==
+
+==levels==
+
+@level01
+name=The Basics Pt. 1
+filename=level01.lvl
+difficulty=1
+timelimit=120
+
+@level02
+name=The Basics Pt. 2
+filename=level02.lvl
+difficulty=1
+timelimit=120
+
+@level03
+name=Side Scroller
+filename=level03.lvl
+difficulty=2
+timelimit=120
+
+@level04
+name=Glass Walls
+filename=level04.lvl
+difficulty=3
+timelimit=180
+
+@level05
+name=Obstruction
+filename=level05.lvl
+difficulty=4
+timelimit=180
+
+@level06
+name=Momentum Pt. 1
+filename=level06.lvl
+difficulty=4
+timelimit=180
+
+@level07
+name=Blocks
+filename=level07.lvl
+difficulty=4
+timelimit=240
+
+@level08
+name=Turret
+filename=level08.lvl
+difficulty=5
+timelimit=240
+
+@level09
+name=Shattered Glass
+filename=level09.lvl
+difficulty=5
+timelimit=240
+
+@level10
+name=Momentum Pt. 2
+filename=level10.lvl
+difficulty=6
+timelimit=180
+
+==levels==
+

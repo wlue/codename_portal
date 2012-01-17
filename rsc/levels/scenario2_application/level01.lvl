@@ -1,0 +1,45 @@
+
+! Scenario 2, Level 1 -- Maze
+
+==info==
+width=34
+height=26
+==info==
+
+==key==
+a=tile(wall)
+d=tile(dwall)
+g=tile(glass)
+q=terrain(bigbox)
+x=door(door|exit=0)
+X=door(door|exit=1)
+==key==
+
+==map==
+d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d 
+d a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a d 
+d a a a a a a a a d d d d d a a a a a a a a a a a a a . . . . . . d 
+d d d d d d d d d d a a a d d d d d d a a a a . . . a . . . . . . d 
+a . . . . . . . . . . . . . . . . . g g g g g . . . a . . . . . . d 
+a . . . . . . . . . . . . . . . . . g g g g g . . . a a g g a g g d 
+a . . . . . . . . . . . . . . . . . d a a a a g g g a a g g a g g d 
+d d d . . . . . . . . . . . . . . . d a a a a . . . a a g g a g g d 
+d a d . . . . . . . . . . . . . . . d a a a a . . . . . . . a g g d 
+d a d d d d . . . . . . . . . . . . d a a a a . . . . . . . a g g d 
+d a a a a d . . . . . . . . . . . . d a a a a . . . . . . . a g g d 
+d a a a a d g g g g . . . . . . . . d d d d d d d a a a a a a g g d 
+d a a a a d . . . g . . . . . . . . g . . . . . a . . . . . . . . d 
+d a a a a d . . . g . . . . . . . . g . . . . . a . . . . . . . . d 
+d a a a a d . q . g . q . q . . . . g . . . . . a . . . . . . . . d 
+d d d d d d a a a d d d d d a a a a d g g g g g a . . . . . . . . d 
+d d d d d d d d d d d d d a a a a a d g g g g g a g g g d d a a a d 
+d d . . . . . . a d d d d . . . . . g . . . . . a . . . d d d d d d 
+d d . . . . . . a d d d d . . . . . g . . . . . a . . . d d d d d d 
+d d . . . x . . a d d d d . . . . . g . . . . . a . . . d d d d d d 
+d d g g g g g g d a a a d g g g d d d d d d d d d g g g d d d d d d 
+d a . . . . . . . . . . . . . . . . d . . . . . . . . . a d d d d d 
+d a . . . . . . . . . . . . . . . . d . . . . . . . . . a d d d d d 
+d a . . . . . . . . . . . . . . . . d . X . . . . . . . a d d d d d 
+d d d d d d d d d d d d d d d d d d d a a a a a a a a a a d d d d d 
+d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d 
+==map==

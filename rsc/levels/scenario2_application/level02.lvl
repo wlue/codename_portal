@@ -1,0 +1,80 @@
+
+! Scenario 2, Level 2 -- Nhoj
+! By: John Petersons
+
+==info==
+width=25
+height=60
+==info==
+
+==key==
+a=tile(wall)
+b=tile(dwall)
+t=turret()
+g=tile(glass)
+x=door(door|exit=0)
+X=door(door|exit=1)
+==key==
+
+==map==
+a a a a a a a a a a a a a a a a a a a a a a a a a 
+a a a a a a a a a a a a a a a a a a a a . . . . a 
+a a a a a . . . . . . . . . . . . . . a . . . . a 
+a a a a a . . . . . . . . . . . . . . a . . . . a 
+a a a a a . . . . . . . . . . . . . . a . . X . a 
+a a a a a . . . . . . . . . . . . . . a . a a a a 
+a a a a a . . . . . . . . . . . . . . a . . . . a 
+a a a a a g g g a a a a a a a a g g g a . . . . a 
+. . . . . . . . a . . . . . . a . . . a . . . . a 
+. . . . . . . . a . . . . . . a . . . a g g g g a 
+. . . . . . . . a . . . . . . a . . . a . . . . a 
+. . . . . . . . a . . . . . . . . . . a . . . . a
+a a . . . . . . a a . . . . . . . . . a . . . . a 
+a a . . . . . . a a . . . . . . . . . a . . . . a 
+a a . . . . . . a a . . . . a . . . . a . . . . a 
+a a a a . . . . a a . . . . a . . t . a . . . . a 
+a a a a . x . . a a . . . . a . . . . a g g g g a 
+a a a a a a a a a a g g g g g a a a a a . . . . a 
+a . . . . . . . . a . . . . . . . . . a . . . . a 
+a . . . . . . . . a . . . . . . . . . a . . . . a
+a . . . . . . . . a . . . . . . . . . a . a a a a
+a . . . . . . . . a a a a a a a . . . a . . . . a
+a . . . . . . . . a . . . . . . . . . a . . . . a 
+a . . . . . . . . a . . . . . . . . . a . . . . a 
+a . . . . . . . . a . . . . . . . . . a g g g g a 
+a . . . . . . . . a . . a a . . . . . a . . . . a 
+a . . . . . . . . . . . . a . . . . . a . . . . a
+a . . . . . . . . . . . . a . . . . . a . . . . a 
+a . . . a g g g a a a a a a a a a a a a . . . . a 
+a . . . a . . . a a a a a a a a a a a a a a a . a 
+a . . . a . . . a a a a a a a a a a a a . . . . a 
+a . . . a . . . a a a a a a a a a a a a . . . . a 
+a . . . a . . . . . . . . . a . . . . a . . . . a 
+a . . . a . . . . . . . . . a . . . . a . . . . a 
+a . . . a . . . . . . . . . . . . . . a . . . . a 
+a . . . a . . . . . . . . . . . . . . a g g g g a 
+a . . . a . . . . . . . . . . . . . . a . . . . a 
+a . . . a g g g a . . . . . a . . . . a . . . . a 
+a . . . . . . . a . . . . . a . . . . a . . . . a 
+a . . . . . . . a . . . . . a . . . . a . . . . a 
+a . . . . . . . a . . . . . a . . a a a . . . . a
+a . . . . . . . a . . . . . a . . . . a . . . . a
+a . . . . . . . a . . . . . a . . . . a . . . . a 
+a . . . . . . . a . . . . . a . . . . a . . . . a
+a . . . . . . . a . . . . . a . . . . a . . . . a
+a . . . . . . . a . . . . . a . . . . a . . . . a
+a . . . . . . . a . . . . . a . . . . a . . . . a
+a a a a a a a a a a a a a a a . . . . a . . . . a
+a . . . . . g . . . g . . . . . . . . a . . . . a
+a . . . . . g . . . g . . . . . . . . a . . . . a
+a . . . . . g . . . g . . . . . . . . a . . . . a
+a . . . . . g . . . g b b b b a a a a a . . . . a
+a . . . . . g . . . g . . . . . . . . a . . . . a
+a a a a . . g . . . g . . . . . . . . a . . . . a
+a . . . . . g . . . g . . . . . . . . a . . . . a
+a . . . . . g . . . a . . . . . . . . a . . . . a
+a . . . . . g . . . a . . . . . . . . . . . . . a
+a . . . . . g . . . a . . . . . . . . . . . . . a 
+a a a a a a a . . . a a a a a . . . . . . . . . a 
+a a a a a a a a a a a a a a a a a a a a a a a a a 
+==map==

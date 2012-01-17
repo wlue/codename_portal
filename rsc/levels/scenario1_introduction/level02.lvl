@@ -1,0 +1,34 @@
+
+! Scenario 1, Level 2 -- The Basics Pt. 2
+
+==info==
+width=28
+height=18
+==info==
+
+==key==
+a=tile(wall)
+x=door(door|exit=0)
+X=door(door|exit=1)
+==key==
+
+==map==
+a a a a a a a a a a a a a a a a a a a a a a a a a a a a 
+a a a a a a a a a a a a a a a a a a a a a a a a a a a a 
+a a a a a a a a a . . . . . . . . . . a a a a a a a a a 
+a a a a a a a a a . . . . . . . . . . a a a a a a a a a 
+a a a a a a a a a . . . . . . . . . . a a a a a a a a a 
+a a a a a a a a a . . . a a a a . . . a a a a a a a a a 
+a a a a a a a a a . . . a a a a . . . a a a a a a a a a 
+a a a a a a a . . . . . . a a . . . . . . a a a a a a a 
+a . . . . . . . . . . . . a a . . . . . . . . . . . . a
+a . . . . . . . . . . . . a a . . . . . . . . . . . . a
+a . . . . . . . . . . . . a a . . . . . . . . . . . . a
+a . x . . . . . . . . . . a a . . . . . . . . . . X . a
+a a a a a a a a a a . . a a a a . . a a a a a a a a a a 
+a a a a a a a a a a . . a a a a . . a a a a a a a a a a 
+a a a a a a a a a a . . . . . . . . a a a a a a a a a a 
+a a a a a a a a a a . . . . . . . . a a a a a a a a a a 
+a a a a a a a a a a a a a a a a a a a a a a a a a a a a 
+a a a a a a a a a a a a a a a a a a a a a a a a a a a a 
+==map==

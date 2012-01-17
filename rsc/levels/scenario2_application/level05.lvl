@@ -1,0 +1,71 @@
+
+! Scenario 2, Level 5 -- Pathways
+! By: John Petersons
+
+==info==
+width=50
+height=50
+==info==
+
+==key==
+a=tile(wall)
+b=tile(dwall)
+t=turret()
+g=tile(glass)
+q=terrain(bigbox)
+x=door(door|exit=0)
+X=door(door|exit=1)
+==key==
+
+==map==
+a a a a a a a a a a a a a a a a b b a a a b a b b b b b a a a a b b b b b b b b b b b b b a a a a a 
+a . . . . . . . . . . . . . . g . . . . . . g . . . . . a . . . . . . . . . . . . . . . . a a a a a 
+a . . . . . . . . . . . . . . g . . . . . . g . . . . . a . . . . . . . . . . . . . . . . a a a a a 
+a . . . . . . . t . . . . . . g . . . . . . g . . . . . a . . . . . . . . . . q . . . . . a a a a a 
+a . . . . . . . . . . . . . . g . . . . . . g . . . . . a . . . . . . . . . . . . . . . . a a a a a 
+a . . . . . a a a a a a a a a a . . g g g g a g g g g g a g g g b a a . . . b a a a g g g a a a a a 
+a . . . . . . . a a a a a a a a . . . . . a a . . . . . g . . . . a a . . . b a a a . . . a a a a a 
+a . . . . . . . a a a a a a a a . . . . . a a . . . . . g . . . . a a . . . b a a a . . . a a a a a 
+a . . . . . . . a a a a a a a a . . . . . a a . . . . . g . . . . a a . . . b a a a . . . a a a a a 
+a . . . . . x . a a a a a a a a . . . . . a a . . . . . g . . . . a a . . . b a a a . . . a a a a a 
+a g g g a a a a a a a a a a a a . . . . . a a . . . . . a b b b b b a . . . b a a a . . . a a a a a 
+a . . . a a a a a a a a a a a a . . . . . a a . . . . . a a a a a a a . . . b a a a . . . a a a a a 
+a . . . a a a a a a a a a a a a . . . . . a a . . . . . a a a a a a a . . . b a a a . . . a a a a a 
+a . . . a a a a a a a a a a a a . . . . . a a . . . . . a a a a a a a . . . b a a a . . . a a a a a 
+a . . . a a a a a a a a a a a a . . . . . a a . . . . . a a a a a a a . . . b a a a . . . a a a a a 
+a . . . a a a a a a a a a a a a . . . . . a a . . . . . a a a a a a a . . . . . . . . . . a a a a a  
+a . . . g . . . a a a a a a a a a a a a a a a a a a a a a a a a a a a . . . . . . . . . . a a a a a 
+a . . . g . . . a a a a a a a a a a a a a a a a a a a a a . . . . . . . . . b a a a a a a a a a a a 
+a . . . g . . . a . . . . . . . . . . . . . . . . . . . . . . . . . . . . . b a a a a a a a a a a a 
+a a a a a g g g a . . . . . . . . . . . . . . . . . . . . . . . a a a . . . b a a a a a a a a a a a 
+a . . . g . . . a . . . . . a a a a a a a a a a a a a a a g g g a a a . . . . . . . . . . . a a a a 
+a . . . g . t . a g g g g g a a a a a a a a a a a a a a a . . . a a a . . . . . . . . . . . a a a a 
+a . . . g . . . a . . . . . a a a a a a a a a a a a a a a . . . a a a a a a a a a a . . . . a a a a 
+a g g g a a a a a . . . . . a a a . . . . . . . . . . a a . . . a a a a a a a a a a . . . . a a a a  
+a . . . g . . . a . . . . . a a a . . . . . . . . . . a a . . . a a a a a a a a a a . . . . a a a a 
+a . t . g . . . a . . . . . a a a . . . . . . . . . . a a . . . a a a a a b b b b b . . . . a a a a 
+a . . . g . . . a a a a . . a a a . X . . . . . . . . a a . . . a a a a a b . . . . . . . . a a a a 
+a a a a a g g g a . . . . . a a a g g g g a a a a a a a a . . . a a a a a b . . . . . . . . a a a a 
+a . . . g . . . a . . . . . a a a . . . . a a a a a a a a . . . a a a a a b . . . . b b b b b b b a 
+a . . . g . . . a . . . . . a a a . . . . g . . . . a a a . . . a a a b . . . . . . . . . . . . . a 
+a . . . g . . . a . . . . . a a a . . . . g . . . . a a a . . . a a a b . . . . . . . . . . . . . a 
+a g g g a a a a a . . . . . a a a . . . . g . . . . a a a . . . a a a b . . . . . . . . . . . . . a 
+a . . . a a a a a g g g g g a a a a a a a a . . . . a a a . . . a a a b . . . . . . . . . . . . . a 
+a . . . a a a a a . . . . . a a a a a a a a . q . . . . . . . . a a a b . . . a a a a . . . . . . a 
+a . . . a a a a a . . . . . a a a a a a a a . . . . q . . . . . a a a b . . . . . . a g g g g g g a 
+a . . . a a a a a . . . . . a a a a a a a a . . . . . . . . . . a a a b . . . . . . a . . . . . . a 
+a . . . a a a a a . . . . . a a a a a a a a a a a a a a a a a a a a a b . . . . . . a . . . . . . a 
+a . . . a a a a a . . . . . a a a a a a a a a a a a a a a a a a a a a b . . . . . . a . . . . t . a 
+a . . . a a a a a . . . . . a a a a a a a a a a a a a a a a a a a a a b . . . . . . a . . . . . . a 
+a . . . a a a a . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . a . . . . a a a 
+a . . . a a a a . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . a . . . . . . a 
+a . . . a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a . . . . . . a 
+a . . . . . . . a . . . . . . a . . . . . a . . . . . a . . . . . a . . . . . a . . a a a . . . . a
+a . . . . . . . a . . . . . . a . . . . . a . . . . . a . . . . . a . . . . . a . . . . . . . . . a  
+a . . . . . . . a . . . . . . a . . . . . a . . . . . a . . . . . a . . . . . a . . . . . . . . . a  
+a . . . . g g g a g g g g g g a g g g g g a g g g g g a g g g g g a g g g g g a . . . . . . . . . a 
+a . . . . a . . . . . . a . . . . . a . . . . . a . . . . . a . . . . . a . . . . . a . . . . . . a 
+a . . . . a . . t . . . a . . . . . a . . . . . a . . . . . a . . t . . a . . . . . a . . . . . . a 
+a . . . . a . . . . . . a . . . . . a . . . . . a . . . . . a . . . . . a . . . . . a . . . . . . a
+a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a 
+==map==
