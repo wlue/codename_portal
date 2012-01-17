@@ -1,0 +1,35 @@
+
+! Scenario 1, Level 4 -- Glass Walls
+
+==info==
+width=32
+height=18
+==info==
+
+==key==
+a=tile(wall)
+g=tile(glass)
+x=door(door|exit=0)
+X=door(door|exit=1)
+==key==
+
+==map==
+a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a 
+a . . . . . . . . . . a a a . . . . . . . . . . a a a a a a a a
+a . . . . . . . . . . a a a . . . . . . . . . . a a a a a a a a
+a . . . . . . . . . . a a a . . . . . . . . . . a a a a a a a a
+a . . x . . . . . . . a a a g g g a a a a g g g a a a a a a a a
+a a a a a a a a g g g a a a . . . a a a a . . . a a a a a a a a
+a a a a a a a a . . . a a a . . . a a a a . . . a a a a a a a a
+a a a a a a a a . . . a a a . . . a a a a . . . a a a . . . . .
+a a . . . . . g . . . g . . . . . a a a a . . . a a a . . . . .
+a a . . . . . g . . . g . . . . . a a a a . . . a a a . . . X .
+a a . . . . . g . . . g . . . . . a a a a . . . a a a g g a a a
+a a . . . a a a . . . a a a a a a a a a a . . . a a a . . a a a
+a a . . . a a a . . . a a a a a a a a a a . . . a a a . . a a a
+a a g g g a a a g g g a a a a a a a a a a g g g a a a g g a a a
+a a . . . . . . . . . a a a a a a a a a a . . . . . . . . . a a
+a a . . . . . . . . . a a a a a a a a a a . . . . . . . . . a a
+a a . . . . . . . . . a a a a a a a a a a . . . . . . . . . a a
+a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a 
+==map==

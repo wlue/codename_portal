@@ -1,0 +1,49 @@
+
+! CODENAME: Portal Scenario File
+! Scenario 2 -- Application
+
+==info==
+name=Application
+difficulty=Moderate
+==info==
+
+==levels==
+
+@level01
+name=Puzzle
+filename=level01.lvl
+difficulty=5
+timelimit=240
+
+@level02
+name=Maze
+filename=level02.lvl
+difficulty=6
+timelimit=300
+
+@level03
+name=Gox Bloss
+filename=level03.lvl
+difficulty=6
+timelimit=240
+
+@level04
+name=Bocaj
+filename=level04.lvl
+difficulty=6
+timelimit=240
+
+@level05
+name=Pathways
+filename=level05.lvl
+difficulty=6
+timelimit=360
+
+@level06
+name=Broken Heart
+filename=level06.lvl
+difficulty=7
+timelimit=300
+
+==levels==
+

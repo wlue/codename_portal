@@ -1,0 +1,40 @@
+
+! Scenario 1, Level 10 -- Momentum Pt. 2
+
+==info==
+width=30
+height=18
+==info==
+
+==key==
+a=tile(wall)
+d=tile(dwall)
+g=tile(glass)
+t=turret()
+q=terrain(bigbox)
+v=tile(spike)
+n=tile(spike)
+x=door(door|exit=0)
+X=door(door|exit=1)
+==key==
+
+==map==
+a a a a a a a a a a a d d d d d d d d d d d d d d a a a a a
+a a a a a a a a a a a d g g g g g d d g g g g g d a a a a a
+d d d d d d d d d d d d g . . . g d d g . . . g d d d d d d
+d . . . . . . . . . . . . . . . . a d g . . . . . . . . . d
+d . . . . . . . . . . . . . . . . a d g . . . . . . . . . d
+d . . . . . . . . . . . . . . . . a d g . . . . . . . . . d
+d . . . . . . . . . . . . . . . . a d g . . . . . . . x . d
+d . X . d v v v v v v d g . . . g d d g . . . g d d d d d d
+d d d d d d d d d d d d g . . . g d d g . . . g d a a a a a
+a a a a a a a a a a a d g . . . g d d g . . . g d a a a a a
+a a a a a a a a a a a d g . . . g d g g . . . g d a a a a a
+a a a a a a a a a a a d . . . . . g g . . . . . d a a a a a
+a a a a a a a a a a a d . . . . . g g . . . . . d a a a a a
+a a a a a a a a a a a d . . . . . g g . . . . . d a a a a a
+a a a a a a a a a a a d . . . . . g g . . . . . d a a a a a
+a a a a a a a a a a a d . . . . . g g . . . . . d a a a a a
+a a a a a a a a a a a d d a a a d d d d a a a d d a a a a a
+a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a
+==map==

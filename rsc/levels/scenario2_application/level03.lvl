@@ -1,0 +1,38 @@
+
+! Scenario 1, Level 8 -- Gox Blass
+
+==info==
+width=28
+height=18
+==info==
+
+==key==
+a=tile(wall)
+d=tile(dwall)
+t=turret()
+g=tile(glass)
+q=terrain(bigbox)
+x=door(door|exit=0)
+X=door(door|exit=1)
+==key==
+
+==map==
+a a a a a a a a a a a a a a a a a a a a a a a a a a a a 
+a a a a a a a a a a d d d d d d d d d d d d d a a a a a 
+a a . . . . . . . . . . . . . . . . . . . . . a a a a a
+a a . . . . . . . . . . . . . . . . . . . . . a a a a a
+a a . . . . . . . . . . . . . . . . . . . . . a a a a a
+a a . . . . . . . . . . . q . . q . a . . g g a a a a a
+a d . . . . . . . . . . . . . . . . a . . a g a a a a a
+d d . . . . . . . . . . . q . . q . a . . a g a a a a a
+d . . . . . . . . . . . . . . . . . a . . a g a a a a a
+d . . . . . . . . . . . . q . . q . a . . a g a . . . a
+d . . . . . . . . . . . . . . . . . a . . . . . . . . a
+d . x . . . . . . . . . . . . . . . a . . q . . q X . a
+d g g g g a a a a a . . . q . . q . a a a a a a a a a a 
+a . . . . . . . . . . . . . . . . . a a a a a a a a a a 
+a . . . . . . . . . . . . . . . . . a a a a a a a a a a 
+a . . . . . . . . . . . . q . . q . a a a a a a a a a a 
+a a a a a a a a a a a a a a a a a a a a a a a a a a a a 
+a a a a a a a a a a a a a a a a a a a a a a a a a a a a 
+==map==

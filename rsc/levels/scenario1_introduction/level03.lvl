@@ -1,0 +1,35 @@
+
+! Scenario 1, Level 3 -- Side Scroller
+
+==info==
+width=32
+height=18
+==info==
+
+==key==
+a=tile(wall)
+v=tile(spike)
+x=door(door|exit=0)
+X=door(door|exit=1)
+==key==
+
+==map==
+a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a 
+a . . . . . . . . . . . . . . . . . . . . a a a a a a a a a a a
+a . . . . . . . . . . . . . . . . . . . . a a a a a a a a a a a
+a . . . . . . . . . . . . . . . . . . . . a a a a a a a a a a a
+a . . X . . . . . . . . . . . . . . . . . a a a a a a a a a a a
+a a a a a a a a a a a a a a a a a . . . . a a a a a a a a a a a
+a . . . . . . . . . . . . . . . a . . . . . . . . . . . . . . a
+a . . . . . . . . . . . . . . . a . . . . . . . . . . . . . . a
+a . . . . . . . . . . . . . . . a . . . . . . . . . . . . . . a
+a . . . a a a a a a a a a a a a a a a a a a a a a a a a . . . a
+a . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . a
+a . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . a
+a . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . a
+a a a a a a a a a a a . . . a a a a a a a . . . . a a a a a a a
+a . . . . . . . . . . . . . . . . . . . a . . . . a a a a a a a
+a . . . . . . . . . . . . . . . . . . . a . . . . a a a a a a a
+a . . x . . . . . . . . . . . . . . . . a v v v v a a a a a a a
+a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a 
+==map==
