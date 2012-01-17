@@ -11,6 +11,8 @@ in scenarios, and are divided in similarity.
 
 All code and assets licenced under MIT licence.
 
+![CODENAME: Portal Screenshot on Windows](http://www.wenhaolue.com/content/images/codenameportal_level.png)
+
 ---------------------------------------------------------
 
 Copyright (C) 2007 Wen-Hao Lue
