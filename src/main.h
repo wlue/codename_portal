@@ -3,9 +3,9 @@
 #define _MAIN_H
 
 // go around a MS Visual C++ 6 truncation warning bug with STL
-#pragma warning(disable: 4786)
-#pragma warning(disable: 4710)
-#pragma warning(disable: 4503)
+// #pragma warning(disable: 4786)
+// #pragma warning(disable: 4710)
+// #pragma warning(disable: 4503)
 
 // include standard libraries
 #include <iostream>		// input and output to console (Debug messages)
@@ -23,12 +23,12 @@
 using namespace std;
 
 // include SDL libraries
-#include "../SDL/include/SDL.h"
-#include "../SDL/include/SDL_image.h"
-#include "../SDL/include/SDL_mixer.h"
-#include "../SDL/include/SDL_ttf.h"
-#include "../SDL/include/SDL_gfxPrimitives.h"
-#include "../SDL/include/SDL_rotozoom.h"
+#include "SDL.h"
+#include "SDL_image.h"
+#include "SDL_mixer.h"
+#include "SDL_ttf.h"
+#include "SDL_gfxPrimitives.h"
+#include "SDL_rotozoom.h"
 
 #define SHOW_LOADING_MESSAGE
 
@@ -297,7 +297,7 @@ inline bool isType(T* obj)
 // is an item in this vector?
 template <class U> inline bool inVector(vector<U>& list, U item)
 {
-	vector<U>::iterator vItr = find(list.begin(), list.end(), item);
+	typename vector<U>::iterator vItr = find(list.begin(), list.end(), item);
 	if(*vItr == NULL) return false;
 	return true;
 }
@@ -329,6 +329,15 @@ inline int yloc2tile(double t)	{ return floorVal<int>((int) t, TILE_HEIGHT) / TI
 inline int xtile2loc(int t)		{ return (t*TILE_WIDTH + TILE_WIDTH/2); }
 inline int ytile2loc(int t)		{ return (t*TILE_HEIGHT + TILE_HEIGHT/2); }
 inline double sign(double val) { return (val>0) ? 1 : ((val<0) ? -1 : 0); }
+
+// convert from a string to a value
+template <class U>
+U str2val(string s)
+{
+	stringstream ss; U val;
+	ss << s;	ss >> val;
+	return val;
+}
 
 // Sets in string "a=b": a, b; given split as "="
 template <class A, class B>
@@ -370,7 +379,7 @@ inline void SplitValues(vector<string>& valList, string text, char split)
 template <class U>
 bool RemoveElement(vector<U>& list, U item)
 {
-	vector<U>::iterator Itr = find(list.begin(), list.end(), item);
+	typename vector<U>::iterator Itr = find(list.begin(), list.end(), item);
 	if(Itr != list.end())
 	{
 		list.erase(Itr);
@@ -386,15 +395,6 @@ string val2str(U val)
 	string str;	stringstream ss;
 	ss << val;	ss >> str;
 	return str;
-}
-
-// convert from a string to a value
-template <class U>
-U str2val(string s)
-{
-	stringstream ss; U val;
-	ss << s;	ss >> val;
-	return val;
 }
 
 // get the distance between to coordinates using the Pythagorean theorem
@@ -439,7 +439,8 @@ template <class U> inline bool inRangeOf(U val, U range)
 namespace collision
 {
 	// box->box collision
-	extern inline bool box(double Ax, double Ay, int Aw, int Ah, double Bx, double By, int Bw, int Bh);
+	// extern inline bool box(double Ax, double Ay, int Aw, int Ah, double Bx, double By, int Bw, int Bh);
+	extern bool box(double Ax, double Ay, int Aw, int Ah, double Bx, double By, int Bw, int Bh);
 	// circle->circle collision
 	extern inline bool circle(double Ax, double Ay, int Ar, double Bx, double By, int Br);
 	// circle->box collision

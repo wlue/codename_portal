@@ -109,7 +109,7 @@ void ImageState::AddAutojoinState(string filepref)
 
 	}
 
-	if(ajlist.size() != size)
+	if((int) ajlist.size() != (int) size)
 	{
 		cout << "Error: autojoin state list not " << size << ": " << ajlist.size() << endl;
 		return;

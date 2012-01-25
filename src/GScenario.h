@@ -13,7 +13,7 @@ private:
 	string filedir;
 	string difficulty;
 	vector<GLevel*> levels;
-	friend GLevel;
+	friend class GLevel;
 
 public:
 	GScenario();

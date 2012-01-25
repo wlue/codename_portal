@@ -29,7 +29,7 @@ protected:
 	void EndGame(int cond);		// called when game ends according to parameter
 	void LoseLevel(int cond);
 
-	friend Client;
+	friend class Client;
 
 private:
 	// Screen/State changes

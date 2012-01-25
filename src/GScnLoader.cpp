@@ -21,7 +21,10 @@ void GScnLoader::LoadScenarios()
 	{
 		string dir;
 		getline(index, dir);
-		Load(dir);
+		if (dir.size() > 0) {
+			cout << "Loading scenario: " << dir << endl;
+			Load(dir);
+		}
 	}
 	
 	index.close();

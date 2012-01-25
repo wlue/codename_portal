@@ -40,7 +40,7 @@ SDL_Color* getSDLColor(int r, int g, int b)
 	return c;
 }
 
-inline SDL_Surface* TTF_DrawText(string fname, string text, string cname, int flags)
+SDL_Surface* TTF_DrawText(string fname, string text, string cname, int flags)
 {
 	TTF_Font* font = fonts[fname];
 	SDL_Surface* textImg = NULL;
@@ -50,7 +50,7 @@ inline SDL_Surface* TTF_DrawText(string fname, string text, string cname, int fl
 	return textImg;
 }
 
-inline SDL_Surface* TTF_DrawText_Blended(string fname, string text, string cname, int flags)
+SDL_Surface* TTF_DrawText_Blended(string fname, string text, string cname, int flags)
 {
 	TTF_Font* font = fonts[fname];
 	SDL_Surface* textImg = NULL;

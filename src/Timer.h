@@ -2,7 +2,7 @@
 #ifndef _CTIMER_H
 #define _CTIMER_H
 
-#include "../SDL/include/SDL.h"
+#include "SDL.h"
 
 // Timer used to keep track of time to the millisecond
 class Timer

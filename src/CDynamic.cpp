@@ -178,7 +178,7 @@ void CDynamic::Bump(CObject* obj)
 {
 	if(obj == NULL) return;
 	obj->Bumped(this);
-	int a = getangle(getX(), getY(), obj->getX(), obj->getY());
+	// int a = getangle(getX(), getY(), obj->getX(), obj->getY());
 	if(onGround() || onSurface(0, -2))
 		yVel = 0;
 	if(onSurface(-1, 0) || onSurface(1, 0))

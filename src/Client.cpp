@@ -160,6 +160,8 @@ void Client::HandlePlayerEvents()
 			if(!keys[PLAYER_KEY_LEFT])
 				control->setXAccel(PLAYER_ACCEL);
 			break;
+		default:
+			break;
 		}
 	}
 	else if(event.type == SDL_KEYUP)
@@ -175,6 +177,8 @@ void Client::HandlePlayerEvents()
 			control->setXAccel(0);
 			if(keys[PLAYER_KEY_LEFT])
 				control->setXAccel(-PLAYER_ACCEL);
+			break;
+		default:
 			break;
 		}
 	}
