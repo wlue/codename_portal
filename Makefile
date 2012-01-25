@@ -22,7 +22,7 @@ CXX = g++
 # -pedantic is another set of warnings. Only useful when trying to trace down weird
 #  bugs.
 
-CXXFLAGS = -g -Wall -MMD -pedantic -I/usr/local/include/SDL -D_GNU_SOURCE=1 -D_THREAD_SAFE
+CXXFLAGS = -g -Wall -MMD -pedantic
 
 # The name of the executable to produce
 EXEC = portal
@@ -54,7 +54,7 @@ $(EXEC): $(OBJECTS)
 # For each object file it will invoke the compiler like so:
 # g++ -g - Wall -MMD =pedantic -c madbirds.cpp -o madbirds.o
 %.o: %.cpp
-	$(CXX) $(CXXFLAGS) -c $< -o $@
+	$(CXX) $(CXXFLAGS) `sdl-config --cflags` -c $< -o $@
 
 # The include directive will import in all of the rules in the .d files that g++
 # creates for us.
