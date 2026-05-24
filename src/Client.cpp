@@ -28,6 +28,8 @@ void Client::Initialize()
 	camera.x = camera.y = 0;
 	camera.w = SCREEN_WIDTH;
 	camera.h = SCREEN_HEIGHT - TILE_HEIGHT*2; // height is reduced by panel hud's height
+	screen_loc.x = 0; screen_loc.y = 0;
+	screen_loc.w = camera.w; screen_loc.h = camera.h;
 	UpdateHUD();
 }
 

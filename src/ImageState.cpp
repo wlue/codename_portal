@@ -60,9 +60,9 @@ SDL_Surface* ImageState::getFrameImage(Image* img, int frame, int mod)
 void ImageState::AddFrame(string filename)
 {
 	SDL_Surface* image = load_image(filename);
-#ifdef SHOW_LOADING_MESSAGE
-	cout << "Loading image: " << filename << endl;
-#endif
+// #ifdef SHOW_LOADING_MESSAGE
+// 	cout << "Loading image: " << filename << endl;
+// #endif
 	if(image == NULL)
 		return;
 

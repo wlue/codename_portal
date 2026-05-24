@@ -191,7 +191,7 @@ void SetSDLScreen(int width, int height)
 	if(screen) SDL_FreeSurface(screen);
 	SCREEN_WIDTH = width;
 	SCREEN_HEIGHT = height;
-	screen = SDL_SetVideoMode(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_BPP, SDL_DOUBLEBUF|SDL_HWSURFACE);
+	screen = SDL_SetVideoMode(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_BPP, SDL_SWSURFACE);
 }
 
 void GarbageCollect()

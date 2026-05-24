@@ -103,13 +103,13 @@ bool CObject::collisionPrecision(CObject* obj, double xloc, double yloc)
 
 void CObject::draw(Client* client)
 {
-	if(!display || !client->inView(this) || !_img || !client->getEye()) 
+	if(!display || !client->inView(this) || !_img || !client->getEye())
 		return;
 
 	ApplySurface_Screen
 	(
-		_img, 
-		client->getSX() + (int(x) - client->getCameraX()) - (_img->w/2), 
+		_img,
+		client->getSX() + (int(x) - client->getCameraX()) - (_img->w/2),
 		client->getSY() + (int(y) - client->getCameraY()) - (_img->h/2),
 		client->getSX(), client->getSY(),
 		client->getSW(), client->getSH()

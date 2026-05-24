@@ -142,7 +142,6 @@ SDL_Surface* load_image(string filename)
 	if(loadedImage != NULL)
 	{
 		optimizedImage = SDL_DisplayFormatAlpha(loadedImage);
-		SDL_SetColorKey(optimizedImage, SDL_RLEACCEL, optimizedImage->format->colorkey);
 		SDL_FreeSurface(loadedImage);
 	}
 	else
@@ -207,7 +206,7 @@ bool fileExists(string filename)
 	return false;
 }
 
-inline int normAngle(int angle)
+int normAngle(int angle)
 {
 	while(angle < 0) angle += 360;
 	while(angle >= 360) angle -= 360;
